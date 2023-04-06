@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>Page 10</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:21px;font-family:BAAAAA+BitstreamVeraSans;color:#3d3e3e;}
+	.ft01{font-size:21px;font-family:CAAAAA+BitstreamVeraSans;color:#3d3e3e;}
+	.ft02{font-size:21px;line-height:28px;font-family:BAAAAA+BitstreamVeraSans;color:#3d3e3e;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="crypton-writeup010.png" alt="background image"/>
+<p style="position:absolute;top:85px;left:85px;white-space:nowrap" class="ft02">we&#160;got&#160;our&#160;secret.rar&#160;password&#160;as&#160;spongebob.&#160;Let’s&#160;open&#160;the&#160;rar&#160;<br/>using&#160;the&#160;password&#160;</p>
+<p style="position:absolute;top:113px;left:296px;white-space:nowrap" class="ft01"><b>spongebob</b></p>
+<p style="position:absolute;top:113px;left:427px;white-space:nowrap" class="ft00">.&#160;</p>
+<p style="position:absolute;top:159px;left:85px;white-space:nowrap" class="ft00">Command&#160;used&#160;:&#160;</p>
+<p style="position:absolute;top:159px;left:271px;white-space:nowrap" class="ft01"><b>unrar&#160;x&#160;secret.rar</b></p>
+<p style="position:absolute;top:205px;left:85px;white-space:nowrap" class="ft02">After&#160;opening&#160;the&#160;rar&#160;we&#160;got&#160;sudo&#160;folder&#160;which&#160;contains&#160;one&#160;<br/>ciphertext&#160;and&#160;one&#160;private&#160;key.</p>
+<p style="position:absolute;top:279px;left:85px;white-space:nowrap" class="ft02">We&#160;got&#160;the&#160;idea&#160;that&#160;this&#160;is&#160;Asymmetric&#160;encryption&#160;so&#160;we&#160;will&#160;be&#160;<br/>using&#160;openssl&#160;to&#160;decrypt&#160;this&#160;ciphertext.</p>
+<p style="position:absolute;top:353px;left:85px;white-space:nowrap" class="ft00">Command&#160;used&#160;:</p>
+<p style="position:absolute;top:353px;left:264px;white-space:nowrap" class="ft01"><b>&#160;openssl&#160;pkeyutl&#160;-decrypt&#160;-in&#160;ciphertext&#160;-</b></p>
+<p style="position:absolute;top:381px;left:85px;white-space:nowrap" class="ft01"><b>inkey&#160;private-key.pem&#160;-out&#160;decrypted.txt</b></p>
+<p style="position:absolute;top:816px;left:85px;white-space:nowrap" class="ft00">&#160;</p>
+<p style="position:absolute;top:908px;left:85px;white-space:nowrap" class="ft00">After&#160;decrypting&#160;the&#160;ciphertext&#160;we&#160;got&#160;decrypted.txt&#160;file.</p>
+<p style="position:absolute;top:954px;left:85px;white-space:nowrap" class="ft00">Now&#160;lets&#160;read&#160;the&#160;file&#160;by&#160;using&#160;the&#160;command&#160;:&#160;</p>
+<p style="position:absolute;top:954px;left:578px;white-space:nowrap" class="ft01"><b>cat&#160;decrypted.txt</b></p>
+<p style="position:absolute;top:954px;left:784px;white-space:nowrap" class="ft00">.</p>
+<p style="position:absolute;top:1000px;left:85px;white-space:nowrap" class="ft00">To&#160;me&#160;it’s&#160;kinda&#160;look&#160;similar&#160;to&#160;root&#160;user’s&#160;password&#160;so,&#160;we&#160;will&#160;use&#160;</p>
+<p style="position:absolute;top:1028px;left:85px;white-space:nowrap" class="ft01"><b>unhackablehrx666&#160;</b></p>
+<p style="position:absolute;top:1028px;left:311px;white-space:nowrap" class="ft00">as&#160;a&#160;password&#160;to&#160;login&#160;as&#160;root&#160;in&#160;SSH.</p>
+</div>
+</body>
+</html>
